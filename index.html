@@ -7,45 +7,52 @@
 
     <body>
         <header>
-            <nav class="menu">
-           <a href="https://hvana.nl/nieuws">NIEUWS</a>
-           <a href="https://hvana.nl/opinie">OPINIE</a>
-           <a href="index.html">VIDEO</a>
-           <a href="https://hvana.nl/columns">COLUMNS</a>
-           <a href="https://hvana.nl/luister">PODCAST</a>
-            </nav>
+    <!-- 1. DE SLIMME TRUC: Checkbox en Menuknop (Hamburger-icoon) -->
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
 
-           <div class="logo">
-           <img class="logo"
-           src="img/hvana_logo_wit-2025.png" alt="logo hvana">
-           </div>
+    <!-- 2. Jouw bestaande hoofdmenu (nu gekoppeld aan de toggle) -->
+    <nav class="menu">
+        <a href="https://hvana.nl">NIEUWS</a>
+        <a href="https://hvana.nl">OPINIE</a>
+        <a href="index.html">VIDEO</a>
+        <a href="https://hvana.nl">COLUMNS</a>
+        <a href="https://hvana.nl">PODCAST</a>
+    </nav>
 
-           <div class="socials">
-            <button><a href="https://x.com/HvanA_nl">X</a></button>
-            <button><a href="https://www.instagram.com/hvana_nl/">Instagram</a></button> 
-            <button><a href="https://www.youtube.com/c/HvanA">Youtube</a></button> 
-            <button><a href="https://www.linkedin.com/company/hvana?originalSubdomain=nl">LinkedIn</a></button> 
-            
-        
-            <div class="zoekbalk">
-  <!-- Het invoerveld -->
-  <input type="text" id="page-search-input" placeholder="Zoek op deze pagina...">
-  
-  <!-- De knop met de foto -->
-  <button id="page-search-btn" type="button">
-    <img src="https://icons8.com" alt="Zoekknop">
-  </button>
-</div>
-        </header>
+    <div class="logo">
+        <img class="logo" src="img/hvana_logo_wit-2025.png" alt="logo hvana">
+    </div>
+
+    <div class="socials">
+        <button><a href="https://x.com">X</a></button>
+        <button><a href="https://instagram.com">Instagram</a></button> 
+        <button><a href="https://youtube.com">Youtube</a></button> 
+        <button><a href="https://linkedin.com">LinkedIn</a></button> 
+    </div>
+</header>
+
 
         
        <nav class="submenu">
-  <a href="link">Agenda</a>
-  <a href="link">Openbaar Vervoer</a>
-  <a href="link">Studie en onderwijs</a>
-  <a href="link">Politiek</a>
-  <a href="link">Toekomst</a>
-  <a href="link">Lokaal</a>
+  <a href="link">agenda</a>
+  <a href="link">openbaar vervoer</a>
+  <a href="link">studie en onderwijs</a>
+  <a href="link">politiek</a>
+  <a href="link">toekomst</a>
+  <a href="link">lokaal</a>
+
+  <!-- De zoekbalk staat nu hier als laatste item in het submenu -->
+    <div class="zoekbalk">
+        <input type="text" id="page-search-input" placeholder="Zoek op deze pagina...">
+        <button id="page-search-btn" type="button">
+            <img src="img/canva-magnifying-glass-icon--MAETCKpz2bs.png" alt="Zoekknop">
+        </button>
+    </div>
   </nav>
 
     <h1>KIJK</h1>
@@ -60,13 +67,68 @@
         
         <!-- Element 2 in het grid (Kolom 2: Rechts) -->
         <div class="text-wrapper"> 
-            <h3>HvA op Rapport – week 4: ‘Ik mis mijn vrienden van vorig jaar’</h3>
+            <h3>HvA op Rapport – week 4: 
+                <br>‘Ik mis mijn vrienden van vorig jaar’</h3>
             <p>In onze nieuwe rubriek ‘HvA Op Rapport’ zijn de rollen een keertje omgedraaid. Niet de student, maar de hogeschool zelf krijgt een cijfer. Elke week vragen we studenten hoe het is om aan de HvA te studeren: wat zijn de grootste ergernissen en pluspunten van de hogeschool?</p>
         </div>  
-
     </div> <!-- Sluit .uitgelichte-video HIER af, zodat alles erin zit! -->
 </article>
 
-    <h2>Meer video's hieronder</h2>
+    <h2>Meer video's</h2>
+
+     <div class="recent-grid">
+            <!-- Blokje 1 -->
+            <a href="https://hvana.nl/kijk/dit-zijn-de-hotspots-rondom-de-hva-campussen">
+                <article class="grid-item">
+                    <div class="card-image">
+                        <img src="img/maxresdefault1.jpg" alt="Hotspots rondom HvA">
+                    </div>
+                    <div class="card-content">
+                        <span class="label">Hotspots</span>
+                        <h4>Nieuw op de hogeschool? Dit zijn de hotspots rondom de HvA-campussen</h4>
+                    </div>
+                </article>
+            </a>
+
+   <!-- Blokje 2 -->
+            <a href="https://hvana.nl/kijk/hva-op-rapport">
+                <article class="grid-item">
+                    <div class="card-image">
+                        <img src="img/maxresdefault2.jpg" alt="HvA op rapport video preview">
+                    </div>
+                    <div class="card-content">
+                        <span class="label">hva</span>
+                        <h4>HvA op Rapport – week 4: ‘Ik mis mijn vrienden van vorig jaar’</h4>
+                    </div>
+                </article>
+            </a>
+
+  <!-- Blokje 3 -->
+            <a href="https://hvana.nl/kijk/je-eigen-gevoel-of-de-wetenschap-waar-vertrouw-jij-op">
+                <article class="grid-item">
+                    <div class="card-image">
+                        <img src="img/maxresdefault3.jpg" alt="Gevoel of wetenschap">
+                    </div>
+                    <div class="card-content">
+                        <span class="label">gevoel</span>
+                        <h4>Je eigen gevoel of de wetenschap: waar vertrouwt de hbo’er op?</h4>
+                    </div>
+                </article>
+            </a>
+  
+  <!-- Blokje 4 -->
+            <a href="https://hvana.nl/kijk/de-studeercrisis">
+                <article class="grid-item">
+                    <div class="card-image">
+                        <img src="img/maxresdefault4.jpg" alt="De Studeercrisis docu">
+                    </div>
+                    <div class="card-content">
+                        <span class="label">studeercrisis</span>
+                        <h4>DE STUDEERCRISIS (als docu)</h4>
+                    </div>
+                </article>
+            </a>
+        </div>
+
     </body>
 </html>
