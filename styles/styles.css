@@ -13,7 +13,7 @@ header {
 
 header a {
     color: #ffffff;
-    text-decoration: none;
+    text-decoration: underline;
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase; /* Alles in hoofdletters */
@@ -34,6 +34,18 @@ body {
 .menu {
     display: flex;
     gap: 30px; /* VERHOOG DIT GETAL: was 20px, nu staan ze verder uit elkaar */
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: transparent;   /* onzichtbaar, maar ruimte is er */
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
+
+.menu :hover {
+    display: inline-block;
+    border-radius: 15px;
+    color: white;
+    background: #fed200;
 }
 
 .logo {
@@ -45,12 +57,37 @@ body {
     text-align: right;
 }
 
+.submenu {
+    background-color: #fed200 ;
+    padding: 15px;
+    font-size: 21px;
+    display: flex;
+    gap: 50px;
+}
+
+.submenu a {
+    text-decoration: none; /* Haalt de onderstreping in het submenu weg */
+}
+
+.submenu :hover {
+    display: inline-block;
+    border-radius: 15px;
+    color: #fed200;
+    background: #ffffff;
+}
+
 
 h1 {
     background-color: rgb(75, 75, 226);
     text-align: center;
     color: white;
     font-size: 60px;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
 }
 
 h3 {
