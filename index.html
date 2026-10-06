@@ -3,6 +3,7 @@
     <head>
         <link rel="stylesheet" href="styles/styles.css">
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
@@ -28,32 +29,47 @@
         <img class="logo" src="img/hvana_logo_wit-2025.png" alt="logo hvana">
     </div>
 
-    <div class="socials">
-        <button><a href="https://x.com">X</a></button>
-        <button><a href="https://instagram.com">Instagram</a></button> 
-        <button><a href="https://youtube.com">Youtube</a></button> 
-        <button><a href="https://linkedin.com">LinkedIn</a></button> 
+        <!-- De nieuwe socials met inklap-functionaliteit voor mobiel -->
+    <input type="checkbox" id="socials-toggle">
+    
+    <div class="socials-container">
+        <!-- Dit is het knopje dat je op mobiel ziet -->
+        <label for="socials-toggle" class="socials-btn">Socials</label>
+        
+        <!-- Hier zitten jouw originele knoppen in -->
+        <div class="socials">
+            <button><a href="https://x.com">X</a></button>
+            <button><a href="https://instagram.com">Instagram</a></button> 
+            <button><a href="https://youtube.com">Youtube</a></button> 
+            <button><a href="https://linkedin.com">LinkedIn</a></button> 
+        </div>
     </div>
+
 </header>
 
 
         
-       <nav class="submenu">
-  <a href="link">agenda</a>
-  <a href="link">openbaar vervoer</a>
-  <a href="link">studie en onderwijs</a>
-  <a href="link">politiek</a>
-  <a href="link">toekomst</a>
-  <a href="link">lokaal</a>
+       <!-- 1. De checkbox en de knop om het submenu op mobiel te openen -->
+<input type="checkbox" id="submenu-toggle">
+<label for="submenu-toggle" class="submenu-btn">Categorieën ▾</label>
 
-  <!-- De zoekbalk staat nu hier als laatste item in het submenu -->
+<!-- 2. Jouw bestaande submenu -->
+<nav class="submenu">
+    <a href="link">agenda</a>
+    <a href="link">openbaar vervoer</a>
+    <a href="link">studie en onderwijs</a>
+    <a href="link">politiek</a>
+    <a href="link">toekomst</a>
+    <a href="link">lokaal</a>
+
     <div class="zoekbalk">
         <input type="text" id="page-search-input" placeholder="Zoek op deze pagina...">
         <button id="page-search-btn" type="button">
             <img src="img/canva-magnifying-glass-icon--MAETCKpz2bs.png" alt="Zoekknop">
         </button>
     </div>
-  </nav>
+</nav>
+
 
     <h1>KIJK</h1>
 
