@@ -395,6 +395,28 @@ article {
     object-fit: cover; 
 }
 
+.card-image::after {
+    content: "▶";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+
+    background-color: #fed200;
+    color: #111111;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 24px;
+    padding-left: 3px;
+}
+
 /* ==========================================================================
    2. TABLET BEREIK (min-width: 600px en max-width: 1024px)
    ========================================================================== */
