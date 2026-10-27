@@ -1,150 +1,85 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="styles/styles.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-
-    <body>
-        <header>
-    <!-- 1. DE SLIMME TRUC: Checkbox en Menuknop (Hamburger-icoon) -->
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="menu-btn">
-        <span></span>
-        <span></span>
-        <span></span>
-    </label>
-
-    <!-- 2. Jouw bestaande hoofdmenu (nu gekoppeld aan de toggle) -->
-    <nav class="menu">
-        <a href="https://hvana.nl">NIEUWS</a>
-        <a href="https://hvana.nl">OPINIE</a>
-        <a href="index.html">VIDEO</a>
-        <a href="https://hvana.nl">COLUMNS</a>
-        <a href="https://hvana.nl">PODCAST</a>
-    </nav>
-
-    <div class="logo">
-        <img class="logo" src="img/hvana_logo_wit-2025.png" alt="logo hvana">
-    </div>
-
-        <!-- De nieuwe socials met inklap-functionaliteit voor mobiel -->
-    <input type="checkbox" id="socials-toggle">
-    
-    <div class="socials-container">
-        <!-- Dit is het knopje dat je op mobiel ziet -->
-        <label for="socials-toggle" class="socials-btn">Socials</label>
-        
-        <!-- Hier zitten jouw originele knoppen in -->
-        <div class="socials">
-            <button><a href="https://x.com">X</a></button>
-            <button><a href="https://instagram.com">Instagram</a></button> 
-            <button><a href="https://youtube.com">Youtube</a></button> 
-            <button><a href="https://linkedin.com">LinkedIn</a></button> 
+<header>
+    <!-- Deze container houdt de bovenbalk samen -->
+    <div class="header-top">
+        <div>
+            <img src="hvana_logo_wit-2025.png" alt="HvanA Logo">
         </div>
-    </div>
 
+        <div class="search-container">
+            <input type="search" id="site-search" list="page-suggestions" placeholder="Zoeken op de site...">
+            <datalist id="page-suggestions">
+                <option value="Nieuws"><option value="Video"><option value="Columns"><option value="Opinie"><option value="Podcast">
+            </datalist>
+            <button type="button" class="search-btn">🔍</button>
+        </div>
+
+        <nav>
+            <ul><ul class="nav-menu"></ul>
+                <li><a href="#">Nieuws</a></li>
+                <li><a href="#">Video</a></li>
+                <li><a href="#">Columns</a></li>
+                <li><a href="#">Opinie</a></li>
+                <li><a href="#">Podcast</a></li>
+            </ul>
+        </nav>
+    </div> <!-- Einde header-top -->
+
+    <!-- Deze valt nu automatisch op rij 2, aan de rechterkant -->
+    <label>
+        <input type="checkbox" id="darkmode-box"> 🌓 Donkere modus
+    </label>
 </header>
 
 
-        
-       <!-- 1. De checkbox en de knop om het submenu op mobiel te openen -->
-<input type="checkbox" id="submenu-toggle">
-<label for="submenu-toggle" class="submenu-btn">Categorieën ▾</label>
+<h1>video</h1>
 
-<!-- 2. Jouw bestaande submenu -->
-<nav class="submenu">
-    <a href="link">agenda</a>
-    <a href="link">openbaar vervoer</a>
-    <a href="link">studie en onderwijs</a>
-    <a href="link">politiek</a>
-    <a href="link">toekomst</a>
-    <a href="link">lokaal</a>
-
-    <div class="zoekbalk">
-        <input type="text" id="page-search-input" placeholder="Zoek op deze pagina...">
-        <button id="page-search-btn" type="button">
-            <img src="img/canva-magnifying-glass-icon--MAETCKpz2bs.png" alt="Zoekknop">
-        </button>
-    </div>
-</nav>
-
-
-    <h1>KIJK</h1>
-
-    <article>
-    <div class="uitgelichte-video">
-        
-        <!-- Element 1 in het grid (Kolom 1: Links) -->
-        <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed?v=zJAifkemYBc" allowfullscreen></iframe>
-        </div>
-        
-        <!-- Element 2 in het grid (Kolom 2: Rechts) -->
-        <div class="text-wrapper"> 
-            <h3>HvA op Rapport – week 4: 
-                <br>‘Ik mis mijn vrienden van vorig jaar’</h3>
-            <p>In onze nieuwe rubriek ‘HvA Op Rapport’ zijn de rollen een keertje omgedraaid. Niet de student, maar de hogeschool zelf krijgt een cijfer. Elke week vragen we studenten hoe het is om aan de HvA te studeren: wat zijn de grootste ergernissen en pluspunten van de hogeschool?</p>
-        </div>  
-    </div> <!-- Sluit .uitgelichte-video HIER af, zodat alles erin zit! -->
+<article class="video-box">
+  <h2>ADE x HvA: welke DJ's heeft de hogeschool in huis?</h2>
+  <p>HvanA ging langs bij Thijn Koelemij (THINNA) en Joachim Willemse (JØASE) en ontdekte hoe hun liefde voor muziek begon, waar ze staan in hun DJ-carrière én waarom Gen Z steeds minder naar de club lijkt te gaan. 'Veel jongeren kiezen liever voor een marathon of HYROX dan een avondje stappen.'</p>
+  
+  <div class="video-wrapper">
+    <!-- GEFIXT: watch?v=hDARfvBLmIk is veranderd naar embed/hDARfvBLmIk -->
+    <iframe src="https://www.youtube.com/watch?v=hDARfvBLmIk" frameborder="0" allowfullscreen></iframe> 
+  </div>
 </article>
 
-    <h2>Meer video's</h2>
-
-     <div class="recent-grid">
-            <!-- Blokje 1 -->
-            <a href="https://hvana.nl/kijk/dit-zijn-de-hotspots-rondom-de-hva-campussen">
-                <article class="grid-item">
-                    <div class="card-image">
-                        <img src="img/maxresdefault1.jpg" alt="Hotspots rondom HvA">
-                    </div>
-                    <div class="card-content">
-                        <span class="label">Hotspots</span>
-                        <h4>Nieuw op de hogeschool? Dit zijn de hotspots rondom de HvA-campussen</h4>
-                    </div>
-                </article>
-            </a>
-
-   <!-- Blokje 2 -->
-            <a href="https://hvana.nl/kijk/hva-op-rapport">
-                <article class="grid-item">
-                    <div class="card-image">
-                        <img src="img/maxresdefault2.jpg" alt="HvA op rapport video preview">
-                    </div>
-                    <div class="card-content">
-                        <span class="label">hva</span>
-                        <h4>HvA op Rapport – week 4: ‘Ik mis mijn vrienden van vorig jaar’</h4>
-                    </div>
-                </article>
-            </a>
-
-  <!-- Blokje 3 -->
-            <a href="https://hvana.nl/kijk/je-eigen-gevoel-of-de-wetenschap-waar-vertrouw-jij-op">
-                <article class="grid-item">
-                    <div class="card-image">
-                        <img src="img/maxresdefault3.jpg" alt="Gevoel of wetenschap">
-                    </div>
-                    <div class="card-content">
-                        <span class="label">gevoel</span>
-                        <h4>Je eigen gevoel of de wetenschap: waar vertrouwt de hbo’er op?</h4>
-                    </div>
-                </article>
-            </a>
+<article class="multi-video-box">
+  <h3>Meer video's</h3>
   
-  <!-- Blokje 4 -->
-            <a href="https://hvana.nl/kijk/de-studeercrisis">
-                <article class="grid-item">
-                    <div class="card-image">
-                        <img src="img/maxresdefault4.jpg" alt="De Studeercrisis docu">
-                    </div>
-                    <div class="card-content">
-                        <span class="label">studeercrisis</span>
-                        <h4>DE STUDEERCRISIS (als docu)</h4>
-                    </div>
-                </article>
-            </a>
-        </div>
+  <div class="video-grid">
+    
+    <!-- Kaartje 1: Linkt naar artikel-1.html -->
+    <a href="artikel-1.html" class="video-item-link">
+      <div class="thumbnail-wrapper">
+        <!-- GEFIXT: Laadt nu de officiële thumbnail in van de video 'UiArsnmvHSg' -->
+        <img src="/embed/https://www.youtube.com/watch?v=UiArsnmvHSg" alt="Video cover">
+        <div class="play-button">▶</div>
+      </div>
+      <p class="video-caption">Lees artikel</p>
+    </a>
 
-    </body>
+    <!-- Kaartje 2: Linkt naar een tweede video (bijv. HvA op rapport) -->
+    <a href="artikel-2.html" class="video-item-link">
+      <div class="thumbnail-wrapper">
+        <!-- GEFIXT: Echte YouTube-ID ingevuld om een werkende poster te tonen -->
+        <img src="/embed/https://www.youtube.com/watch?v=PWLzqe5aXmE" alt="Video cover">
+        <div class="play-button">▶</div>
+      </div>
+      <p class="video-caption">Lees artikel</p>
+    </a>
+
+     <a href="artikel-3.html" class="video-item-link">
+      <div class="thumbnail-wrapper">
+        <!-- GEFIXT: Laadt nu de officiële thumbnail in van de video 'UiArsnmvHSg' -->
+        <img src="/embed/https://www.youtube.com/watch?v=GKVTw0gS7bI" alt="Video cover">
+        <div class="play-button">▶</div>
+      </div>
+      <p class="video-caption">Lees artikel</p>
+    </a>
+
+  </div>
+</article>
+
+</body>
 </html>
