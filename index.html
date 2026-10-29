@@ -23,14 +23,26 @@
         </div>
 
         <nav>
-            <ul><ul class="nav-menu"></ul>
-                <li><a href="#">Nieuws</a></li>
-                <li><a href="#">Video</a></li>
-                <li><a href="#">Columns</a></li>
-                <li><a href="#">Opinie</a></li>
-                <li><a href="#">Podcast</a></li>
-            </ul>
-        </nav>
+    <!-- 1. De onzichtbare checkbox die de status (open/dicht) bijhoudt -->
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+    <!-- 2. De hamburgerknop waar de bezoeker op klikt (gekoppeld via 'for') -->
+    <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <!-- 3. Het daadwerkelijke menu dat open en dicht klapt -->
+    <ul class="nav-menu">
+        <li><a href="#">Nieuws</a></li>
+        <li><a href="#">Video</a></li>
+        <li><a href="#">Columns</a></li>
+        <li><a href="#">Opinie</a></li>
+        <li><a href="#">Podcast</a></li>
+    </ul>
+</nav>
+
     </div> <!-- Einde header-top -->
 
     <!-- Deze valt nu automatisch op rij 2, aan de rechterkant -->
@@ -39,55 +51,53 @@
     </label>
 </header>
 
+<div class="video-balk">
+  Video
+</div>
 
-<h1>video</h1>
 
 <article class="video-box">
-  <h2>ADE x HvA: welke DJ's heeft de hogeschool in huis?</h2>
-  <p>HvanA ging langs bij Thijn Koelemij (THINNA) en Joachim Willemse (JØASE) en ontdekte hoe hun liefde voor muziek begon, waar ze staan in hun DJ-carrière én waarom Gen Z steeds minder naar de club lijkt te gaan. 'Veel jongeren kiezen liever voor een marathon of HYROX dan een avondje stappen.'</p>
-  
   <div class="video-wrapper">
     <!-- GEFIXT: watch?v=hDARfvBLmIk is veranderd naar embed/hDARfvBLmIk -->
-    <iframe src="https://www.youtube.com/watch?v=hDARfvBLmIk" frameborder="0" allowfullscreen></iframe> 
-  </div>
+    <iframe src="https://www.youtube.com/embed/?v=hDARfvBLmIk" frameborder="0" allowfullscreen></iframe> 
+</div>
 </article>
+<h2>ADE x HvA: welke DJ's heeft de hogeschool in huis?</h2>
+  <p>HvanA ging langs bij Thijn Koelemij (THINNA) en Joachim Willemse (JØASE) en ontdekte hoe hun liefde voor muziek begon, waar ze staan in hun DJ-carrière én waarom Gen Z steeds minder naar de club lijkt te gaan. 'Veel jongeren kiezen liever voor een marathon of HYROX dan een avondje stappen.'</p>
+  
 
 <article class="multi-video-box">
   <h3>Meer video's</h3>
   
   <div class="video-grid">
     
-    <!-- Kaartje 1: Linkt naar artikel-1.html -->
-    <a href="artikel-1.html" class="video-item-link">
+    <!-- Kaartje 1: Salina maakt doofheid bespreekbaar -->
+    <div class="video-item-link">
       <div class="thumbnail-wrapper">
-        <!-- GEFIXT: Laadt nu de officiële thumbnail in van de video 'UiArsnmvHSg' -->
-        <img src="/embed/https://www.youtube.com/watch?v=UiArsnmvHSg" alt="Video cover">
-        <div class="play-button">▶</div>
+        <iframe width="100%" height="200" src="https://www.youtube.com/embed/?v=UiArsnmvHSg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
-      <p class="video-caption">Lees artikel</p>
-    </a>
+      <p class="video-caption"><a href="artikel-1.html">Lees artikel</a></p>
+    </div>
 
-    <!-- Kaartje 2: Linkt naar een tweede video (bijv. HvA op rapport) -->
-    <a href="artikel-2.html" class="video-item-link">
+    <!-- Kaartje 2: HvA op Rapport - week 8 -->
+    <div class="video-item-link">
       <div class="thumbnail-wrapper">
-        <!-- GEFIXT: Echte YouTube-ID ingevuld om een werkende poster te tonen -->
-        <img src="/embed/https://www.youtube.com/watch?v=PWLzqe5aXmE" alt="Video cover">
-        <div class="play-button">▶</div>
+        <iframe width="100%" height="200" src="https://www.youtube.com/embed/?v=PWLzqe5aXmE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
-      <p class="video-caption">Lees artikel</p>
-    </a>
+      <p class="video-caption"><a href="artikel-2.html">Lees artikel</a></p>
+    </div>
 
-     <a href="artikel-3.html" class="video-item-link">
+    <!-- Kaartje 3: HvA op Rapport - week 7 -->
+    <div class="video-item-link">
       <div class="thumbnail-wrapper">
-        <!-- GEFIXT: Laadt nu de officiële thumbnail in van de video 'UiArsnmvHSg' -->
-        <img src="/embed/https://www.youtube.com/watch?v=GKVTw0gS7bI" alt="Video cover">
-        <div class="play-button">▶</div>
+        <iframe width="100%" height="200" src="https://www.youtube.com/embed/?v=GKVTw0gS7bI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
-      <p class="video-caption">Lees artikel</p>
-    </a>
+      <p class="video-caption"><a href="artikel-3.html">Lees artikel</a></p>
+    </div>
 
   </div>
 </article>
+
 
 </body>
 </html>
